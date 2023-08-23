@@ -1,0 +1,166 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" href="styles.css"> 
+<meta charset="utf-8">
+<title id="title">Rebbe Rashab Timeline></title>
+</head>
+
+<body>
+
+<header></header>
+
+<main id="main">
+  <div id="very-top"><b>B"H</b></div>
+<div id="top"><h1>Rebbe Rashab Timeline</h1>
+  </div>
+
+
+<div id="img-div">
+ 
+<img id="image" src="https://www.greenfieldjudaica.com/itemimageslarge/Rebbe_Rashab_of_Lubavitch.jpg">
+ <div id="img-caption">Famous Picture of The Rebbe Rashab</div>
+</div>
+
+<div id="tribute-info">
+  <ul>
+    <li><b>1860:</b> Birth of the Rebbe Rashab on the 20th of the Jewish month of Cheshvan (the 5th of November).</li>
+    <li><b>1875:</b> Married his cousin Rebbetzin Shterna Sara after the close of Shabbat, on the 11th of the Jewish month of Elul (the 11th of September).</li>
+    <li><b>1880:</b> Begins his work in public affairs.</li>
+    <li><b>1882:</b> Begins guiding the chassidim, and accepts the post of rebbe.</li>
+    <li><b>1892:</b> Endeavors to have the expulsion from Moscow rescinded, and effects a postponement until the summer; provides substantial financial subsidies to enable those expelled to settle in new places.</li>
+    <li><b>1893:</b> Reestablishes the committee of communal leaders in Petersburg.</li>
+    <li><b>1894:</b> Visits the settlements in Kherson province.</li>
+    <li><b>1897:</b> Establishes the Yeshivot Tomchei T’mimim.</li>
+    <li><b>1898:</b> Travels in the public interest to Kiev and Odessa.</li>
+    <li><b>1899:</b> Expresses his negative views regarding the Zionist party.</li>
+    <li><b>1901:</b> Visits Germany, France and Holland on communal concerns.</li>
+    <li><b>1902:</b> With the assistance of the philanthropic brothers Poliakov and the help of the I.C.A., establishes a factory for weaving and spinning wool in Dubrovna, Mogilev province. Some 2000 Jews earn ample livelihoods working there.</li>
+    <li><b>1904:</b> Establishes committees to send matzot to Jewish soldiers in the Far East.</li>
+    <li><b>1906:</b> Successfully endeavors in Petersburg to halt the pogroms.</li>
+    <li><b>1907:</b> Prepares a detailed program entitled Hitagdut Hayerei’im (“The Union of Observant Jews”), and conveys it to Rabbi Breuer and the learned, G‑d-fearing Rabbi Yaakov Rosenheim.</li>
+    <li><b>1908:</b> Participates in the meeting of communal leaders of Germany in Berlin.</li>
+    <li><b>1909:</b> At the Katowitz Conference he announces his withdrawal from the Agudat Yisrael.</li>
+    <li><b>1911:</b> Establishes Yeshivat Torat Emet in Hebron, Israel.</li>
+    <li><b>1915:</b> On the 17th of the Jewish month of Cheshvan (the 25th of October), he leaves Lubavitch and moves to Rostov, on the River Don.</li>
+    <li><b>1916:</b> During the summer, establishes Yeshivot in Georgia.</li>
+    <li><b>1917:</b> Succeeds in securing legal exemption from military service for 2,382 religious functionaries (rabbis, cantors, ritual slaughterers, etc.).</li>
+    <li><b>1920:</b> After Shabbat ends, of the Torah reading of Vayikra, eve of Sunday, 2 Nissan (the 21st of March), at 3:30 AM, he passes away and is interred in Rostov, on the river Don.</li>
+    
+  </ul>
+</div>
+
+<div id="link">
+  <p>To learn more about The Rebbe Rashab, see
+  <a id="tribute-link" target="_blank" href="https://www.chabad.org/library/article_cdo/aid/1235767/jewish/A-Basic-Timeline-of-Rabbi-Sholom-DovBers-Life.htm">Chabad.org</a></p>
+  </div>
+
+
+
+
+
+
+
+
+</main>
+
+
+</body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+
+
+
+#main {
+  background-color: #e6e2d3;
+  margin: -10px;
+}
+
+#very-top{
+text-align: center;
+  font-family: Century Gothic;
+  background-color:  #dac292;
+  padding-top: 20px;
+  font-size: 20px;
+  
+}
+
+#top {
+  background-color:  #dac292;
+  
+}
+
+
+
+
+h1 {
+  text-align: center;
+  font-family: Century Gothic;
+  padding: 50px;
+  padding-top: 30px;
+ 
+  font-size: 70px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  margin-top: 100px;
+  
+}
+
+#img-caption {
+  text-align: center;
+  font-family: Century Gothic;
+  padding: 10px;
+  max-width: 100%;
+  font-size: 18px;
+}
+
+
+ul {
+  font-family: Century Gothic;
+  width: 80%;
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  font-size: 20px;
+
+}
+
+
+li {
+  padding: 5px;
+}
+
+
+
+#link {
+  padding: 20px;
+  text-align: center;
+  font-family: Century Gothic;
+  max-width: 100%;
+  font-size: 24px;
+  background-color:   #dac292;
+}
+
+a {
+  color: gray;
+}
+
+
+
+** end of undefined **
+

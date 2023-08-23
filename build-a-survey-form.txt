@@ -1,0 +1,150 @@
+** start of undefined **
+
+<!DOCTYPE html>
+ <html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8">
+    <title>770 Rosh Hashana Survey</title> 
+
+
+
+  </head>
+  <body>
+    <h1 id="title">770 Rosh Hashana Survey</h1>
+    <p id="description">Tell us how your Rosh Hashana in 770 went</p>
+
+    <form id="survey-form">
+
+     <fieldset>
+
+      <label id="name-label">Name<input id="name" type="text" required name="" placeholder="Enter your name"></label>
+
+      <label id="email-label">Email<input id="email" type="email" required name="" placeholder="Enter your email"></label>
+
+      <label id="number-label">Age<input id="number" type="number" name="" placeholder="number" min="1" max="73"></label>
+
+      
+
+
+
+
+
+
+
+
+      <label>
+        <select id="dropdown">
+          <option>Stayed at...</option>
+          <option>Home</option>
+          <option>Eshel</option>
+          <option>Bench</option>
+
+        </select>
+      </label>
+
+
+     <label>
+        <input id="" type="radio" value="1" name="yukel" placeholder="">
+      </label>
+      <label>
+        <input id="" type="radio" value="2" name="yukel" placeholder="">
+      </label>
+
+
+      <label>
+        <input id="" type="checkbox" value="1" name="" placeholder="">
+      </label>
+      <label>
+        <input id="" type="checkbox" value="2" name="" placeholder="">
+      </label>
+      <label>
+        <input id="" type="checkbox" value="3" name="" placeholder="">
+      </label>
+
+      
+      
+      <label>
+         <textarea>
+
+         </textarea>
+      </label>
+
+
+      <label>
+        <input id="submit" type="submit" value="" name="" placeholder="">
+      </label>
+  
+
+
+
+
+
+
+
+
+
+
+
+     </fieldset>
+
+
+
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </html>
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  
+}
+
+
+
+
+
+
+https://collive.com/wp-content/uploads/photos/2021/09/MC_P9592.jpg
+
+
+
+** end of undefined **
+

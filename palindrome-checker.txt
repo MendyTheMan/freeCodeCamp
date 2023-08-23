@@ -1,0 +1,37 @@
+function palindrome(str) {
+  let newWord = "";
+  let regWord = /[a-zA-Z0-9]+/;
+  let half1 = "";
+  let half2 = "";
+  let half2New = "";
+
+  for (let i = 0; i < str.length; i++) {
+    if (regWord.test(str[i])) {
+      newWord += str[i].toLowerCase();
+    }
+  }
+
+  if (newWord.length % 2 === 0) {
+    half1 = newWord.slice(0, newWord.length / 2)
+    half2 = newWord.slice(newWord.length / 2)
+  } else {
+    half1 = newWord.slice(0, newWord.length / 2)
+    half2 = newWord.slice(-newWord.length / 2)
+  }
+
+  for (let j = half2.length - 1; j >= 0 ; j--) {
+    half2New += half2[j];
+  }
+
+  if (half1 === half2New) {
+    console.log('hello')
+    return true;
+  } else {
+    return false;
+  }
+
+
+  
+}
+
+palindrome("eyye");

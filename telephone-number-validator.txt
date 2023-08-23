@@ -1,0 +1,55 @@
+function telephoneCheck(str) {
+  
+  //defines regex just numbers, and regex with valid symbols "-,(,)"
+  let regXNum = /[0-9]/;
+  let regXSymbol = /^[\d\s\-()]+$/;
+
+  //makes a string just with the digits, no symbols
+  let justNum = "";
+  for (let i = 0; i < str.length; i++) {
+    if (regXNum.test(str[i])) {
+      justNum += str[i]
+    }
+  }
+  //sees if its a valid length number
+  if (justNum.length > 11 || justNum.length < 10) {
+    return false;
+  }
+  //if its 11 digits meaning with country code, only '1' is valid
+  if (justNum.length === 11 && str[0] != 1) {
+    return false;
+  }
+
+  //now sees if the actual full string has any invalid symbols
+  for (let i = 0; i < str.length; i++) {
+    if (!regXSymbol.test(str[i])) {
+      return false;
+    }
+    //sees if there is a parnthisee without the corresponding one
+    if (str[i] === "(" && str[i + 4] !== ")") {
+      return false;
+    }
+    //just in reverse
+    if (str[i] === ")" && str[i - 4] !== "(") {
+      return false;
+    }
+  }
+  //check of there are more than 2 dashes. I know... whatever
+  //the problem is this only checks if there are more than 2 dashes, but not their location. so yeah...
+  //had some trouble seeing the length of the .match so had to make some craziness.
+  let dashCount = str.match(/-/g);
+  let dashLength = 0
+  if (dashCount !== null) {
+    dashLength = dashCount.length;
+  }  
+  if (dashLength > 2) {
+    return false;
+  }
+
+  //this is where i can see the results...
+  console.log(dashLength)
+  console.log(justNum)
+  return true;
+}
+
+telephoneCheck("1 555 555 5555");

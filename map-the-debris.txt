@@ -1,0 +1,28 @@
+function orbitalPeriod(arr) {
+  // https://en.wikipedia.org/wiki/Orbital_period
+
+  let grandArr = []
+  
+  //GM is the gravitional pull
+  const GM = 398600.4418;
+  const earthRadius = 6367.4447;
+
+  // t is the time it takes for an orbit
+  // a is the 'bigger' radius of an orbit (not every orbit is exactly circle)
+  for (let i = 0; i < arr.length; i++) {
+    let obj = {};
+    let a = arr[i].avgAlt + earthRadius;
+    let t = 2 * 3.14159265359 * Math.sqrt(a ** 3 / GM);
+    let rounded = Math.round(t);
+    obj.name = arr[i].name;
+    obj.orbitalPeriod = rounded;
+    grandArr.push(obj)
+  }
+
+  console.log(grandArr)
+
+  return grandArr;
+}
+
+orbitalPeriod([{ name: "sputnik", avgAlt: 35873.5553 }]);
+

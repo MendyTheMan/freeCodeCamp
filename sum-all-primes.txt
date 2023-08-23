@@ -1,0 +1,34 @@
+function sumPrimes(num) {
+  let firstArr = [];
+  let finalArr = []
+  let square = Math.sqrt(num)
+
+  console.log(2 ^ 2)
+
+  for (let q = 0; q <= num; q++) {
+    firstArr[q] = true;
+  }
+
+  for (let i = 2; i < square; i++) {
+    if (firstArr[i] === true) {
+      for (let j = i ** 2, k = 0; j <= num; j = i ** 2 +
+      k * i, k++) {
+        console.log(i,j, k)
+        firstArr[j] = false;
+      }
+    }
+  }
+  firstArr[0] = false;
+  firstArr[1] = false;
+
+  for (let y = 0; y < firstArr.length; y++) {
+    if (firstArr[y] === true) {
+      finalArr.push(y)
+    }
+  }
+
+console.log(finalArr)
+  return finalArr.reduce((a,b) => a + b);
+}
+
+sumPrimes(10);

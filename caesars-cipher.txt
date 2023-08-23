@@ -1,0 +1,31 @@
+function rot13(str) {
+  let davar = ''
+let index5 = str[5]
+let abcs = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+
+for (let i = 0; i < str.length; i++) {
+  if(abcs.indexOf(str[i]) != -1) {
+  let letter = abcs.indexOf(str[i])
+  let newLetter = (letter + 13) % 26
+  console.log(letter)
+  console.log(newLetter)
+  davar += abcs[newLetter]
+} else {
+  davar += str[i]
+}
+
+
+}
+
+let hi = abcs.indexOf(str[5])
+
+let lo = (1 + 13) % 26
+
+
+console.log(davar)
+
+
+  return davar;
+}
+
+rot13("SERR PBQR PNZC");

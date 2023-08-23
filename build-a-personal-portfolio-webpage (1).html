@@ -1,0 +1,225 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nerko+One&display=swap" rel="stylesheet">
+
+
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MendyTheMan Mendy Liberow Web Design</title>
+
+	<style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+#navbar {
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  background-color: FE5D26;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+
+
+#navbar a {
+  color: FAEDCA;
+  font-size: 18px;
+  padding: 15px;
+  font-family: verdana;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#navbar a#thirdlink {
+  padding-right: 50px;
+}
+
+#navbar a:hover {
+  color: F2C078;
+  
+}
+
+#welcome-section h1 {
+  font-size: 90px;
+  font-family: nerko one; 
+  padding-top: 40vh;  
+}
+
+#welcome-section h2 {
+  
+  font-size: 50px;
+  font-family: sofia;
+}
+
+#welcome-section {
+  width: 100%;
+  height: 100vh;
+  background-color: F2C078;
+  text-align: center;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+#projects {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: FAEDCA;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  
+}
+
+.project-tile {
+  height: 400px;
+  width: 300px;
+  // border: 5px solid black;
+  border-radius: 20px;
+  padding-bottom: 30px;
+  
+}
+
+.project-tile a {
+  color: black;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.project-tile img {
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.project-tile p {
+  padding: 25px;
+  font-family: verdana;
+  font-size: 18px;
+}
+
+
+#contact {
+  width: 100%;
+  height: 30vh;
+  background-color: 7EBC89;
+  text-align: center;
+  display: block;
+}
+
+#contact-stuff {
+  // border: 10px solid black;
+  display: block;
+}
+
+#contact-stuff p {
+  padding-top: 8vh;
+  font-size: 50px;
+  font-family: sofia;
+  
+
+}
+
+#contact-stuff a {
+  color: black;
+  
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#contact-stuff a:hover {
+  color: F2C078;
+  transition: 0.3s
+}
+
+
+// #break {
+background-color: pink;
+  flex-basis: 100%;
+  height: 50px;
+  
+}
+
+@media (max-width: 500px) {
+  #welcome-section h1 {
+    font-size: 70px;
+  }
+ #welcome-section h2 {
+    font-size: 40px;
+  }
+  #projects {
+    gap: 20px;
+  }
+}
+
+
+
+
+
+
+</style>
+
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="#welcome-section">About</a>
+      <a href="#projects">Projects</a>
+      <a id="thirdlink" href="#contact">Contact</a>
+    </div>
+    <div id="welcome-section">
+      
+      <div class="own-line"><h1>MendyTheMan</h1></div>
+      <div id="break" class="own-line"></div>
+      <div class="own-line"><h2>Web and Graphic Design</h2></div>
+      
+    </div>
+    <div id="projects">
+      <div class="project-tile">
+        <a href="#contact">
+        <img src="https://cdn.pixabay.com/photo/2013/04/03/12/05/tree-99852__340.jpg">
+        <p>Hero Tree</p>
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="#contact">
+        <img src="https://media.istockphoto.com/id/543052538/photo/tree.jpg?s=612x612&w=0&k=20&c=P7HG7i388vFqFlt-z1VSagyWyl7q_k1uCt_wxNWKyvA=">
+        <p>Hero Tree #2</p>
+        </a>
+      </div>
+      
+
+    </div>
+    <div id="contact">
+      <div id="contact-stuff">
+<p><a id="profile-link" href="" target="_blank">GitHub</a></p>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+

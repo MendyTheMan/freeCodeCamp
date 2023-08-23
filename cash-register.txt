@@ -1,0 +1,77 @@
+function checkCashRegister(price, cash, cid) {
+  let change = cash - price;
+  let finalObj = {status: "INSUFFICIENT_FUNDS", change: []};
+  let availableCash = cid[0][1] + cid[1][1] + cid[2][1] + cid[3][1] + cid[4][1] + cid[5][1] + cid[6][1] + cid[7][1] + cid[8][1];
+
+  availableCash = Math.round(availableCash * 10000) / 10000
+
+//console.log('change', change)
+//console.log('cash avialble', availableCash)
+  if (change > availableCash) {
+    return finalObj;
+  }
+  if (change === availableCash) {
+    finalObj.status = "CLOSED";
+    finalObj.change = cid;
+    console.log(finalObj)
+    return finalObj;
+  } else if (change < availableCash){
+    finalObj.status = "OPEN";
+  }
+
+
+
+  // this is the meat and potatoes.
+  //the function takes the money name for the object output
+  //money value for the value of the money thats currently being calculated
+  // the arrIndex is for figuring out the amount of money in that index of the cid cash register
+
+  function calcChange(moneyName, moneyValue, arrIndex) {
+
+    //counter 1 keeps track of how many times we can get this bill change. starts at 0
+    let counter1 = 0;
+
+    //counter 2 is for checking if the cid has enough money for what you want to take out. starts at 1 bill and keeps going up until your trying to take out more bills than are in the cid for that bill type
+    let counter2 = 1;
+
+    //as long as change is bigger than the bill you want and the cid has enough bills for this type
+    while (change >= moneyValue && cid[arrIndex][1] >= moneyValue * counter2) {
+
+      //subtract the calculated amount from the total and move on...
+      change -= moneyValue;
+      //this fixes an annoying decimal issue
+      change = Math.round(change * 100000) / 100000
+      //let me see progress
+      console.log(change)
+      //keep the numbers moving...
+      counter1++
+      counter2++
+    }
+
+    //as long as counter 1 counts more than 0 bills, add that bill type to the change object. if not, no need to add anything
+    if (counter1 > 0) {
+      finalObj.change.push([moneyName, moneyValue * counter1])
+    }
+  }
+
+//calculates for each bill type
+  calcChange("ONE HUNDRED", 100, 8)
+  calcChange("TWENTY", 20, 7)
+  calcChange("TEN", 10, 6)
+  calcChange("FIVE", 5, 5)
+  calcChange("ONE", 1, 4)
+  calcChange("QUARTER", 0.25, 3)
+  calcChange("DIME", 0.1, 2)
+  calcChange("NICKEL", 0.05, 1)
+  calcChange("PENNY", 0.01, 0)
+
+  //sees if you have remaining change that wasnt accounted for
+  if (change > 0) {
+    finalObj = {status: "INSUFFICIENT_FUNDS", change: []}
+  }
+
+  console.log(finalObj)
+  return finalObj;
+}
+
+checkCashRegister(3.26, 100, [["PENNY", 1.01], ["NICKEL", 2.05], ["DIME", 3.1], ["QUARTER", 4.25], ["ONE", 90], ["FIVE", 55], ["TEN", 20], ["TWENTY", 60], ["ONE HUNDRED", 100]]);
